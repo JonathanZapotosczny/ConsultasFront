@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aline Novak - Agende sua consulta!</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../static/images/nutricionista.png" type="image/x-icon">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <!-- CSS do Projeto -->
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <header>
+    <nav class="navbar navbar-expand-lg menu">
+      <div class="container">
+        <a class="navbar-brand" href="#pagina-inicial">
+          <h1 class="logo-menu">Aline <strong>Novak</strong><br>Nutricionista</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-itens"
+          aria-controls="menu-itens" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-itens">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link pagina-menu" href="#pagina-inicial" id="pagina-menu">PÁGINA INICIAL</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link sobre-menu" href="#sobre-mim" id="sobre-menu">SOBRE MIM</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link servicos-menu" href="#servicos" id="servicos-menu">SERVIÇOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link adm-menu" href="#" id="administracao-menu">ADMINISTRAÇÃO</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn nav-link" href="#agende" id="btn-agende-menu">MARCAR HORÁRIO</a>
+            </li>
+            <li class="nav-item">
+              <input type="checkbox" name="check-tema" id="check-tema" class="btn nav-link" />
+              <label for="check-tema">
+                <i class="bi bi-sun"> MODO CLARO</i>
+                <i class="bi bi-moon"> MODO ESCURO</i>
+              </label>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-mais-menu" aria-label="Aumentar Fontes" onclick="FontSize('+')">A+</button>
+              <button class="btn btn-menos-menu" aria-label="Diminuir Fontes" onclick="FontSize('-')">A-</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Página Inicial -->
+  <div class="container" id="pagina-inicial">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="titulo-pagina">Olá! Como posso te ajudar hoje?</h2>
+        <p class="paragrafo-pagina">Nutricionista formada pelo Centro Universitário Vale do Iguaçu (2021),
+          atualmente, realizando especialização em Atenção ao Câncer pela AHLVF/HRO em Chapecó/SC (2022-2024).
+          Possuo cursos de extensão focados em Nutrição Oncológica e Terapia Nutricional Enteral e Parenteral.
+        </p>
+        <a href="#agende" class="btn" id="btn-agende-pagina">MARCAR HORÁRIO</a>
+      </div>
+      <div class="col-md-6">
+        <img class="img-fluid" src="../static/images/illustration.png"
+          alt="Ilustração de uma mulher correndo ao ar livre, de pele clara, vestindo tênis, top e máscara verde, além de uma bermuda cinza e ao fundo árvores e vegetação rasteira."
+          id="ilustracao">
+      </div>
+    </div>
+  </div>
+
+  <!-- Sobre Mim -->
+  <div class="container" id="sobre-mim">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="titulo-sobre">SOBRE MIM</h2>
+      </div>
+      <div class="row">
+        <div class="col-12 imagem">
+          <img class="img-fluid aline" src="../static/images/aline.png"
+            alt="Foto da nutricionista, pele branca, cabelos longos, loiros e batom vermelho, com seu jaléco em cima de um vestido preto, e ao fundo vegetação verde.">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1 col-md-3"></div>
+        <div class="col-10 col-md-6">
+          <p class="paragrafo-sobre">"Minha missão como nutricionista é promover qualidade de vida e bem-estar,
+            auxiliando na prevenção e tratamento de doenças e recuperação da saúde. Atualmente, possuo atendimento
+            focado a
+            pacientes clínicos e oncológicos, com o intuito de manter ou recuperar o estado nutricional durante e após o
+            tratamento. Posso te ajudar, através de um aconselhamento dietético adequado, durante o processo de
+            tratamento e
+            reabilitação de enfermidades. O trabalho consiste em estabelecer uma dieta personalizada que atenda as
+            necessidades individuais de cada paciente." - <strong>Aline Novak</strong></p>
+          <div class="col-1 col-md-3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Serviços -->
+  <div class="container" id="servicos">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="titulo-servicos">
+          SERVIÇOS
+        </h2>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 mini-banners">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="card text-center">
+            <i class="bi bi-heart-pulse" title="Ícone de coração e batimentos" alt="Ícone de coração e batimentos"></i>
+            <div class="card-body">
+              <h6 class="card-title-1">Avaliação Nutricional<br> &nbsp</h5>
+                <a href="#agende" class="btn card-a-1">SAIBA MAIS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card text-center">
+            <i class="bi bi-heart-pulse" title="Ícone de coração e batimentos" alt="Ícone de coração e batimentos"></i>
+            <div class="card-body">
+              <h6 class="card-title-2">Planejamento de Cardápios<br> &nbsp</h5>
+                <a href="#agende" class="btn card-a-2">SAIBA MAIS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card text-center">
+            <i class="bi bi-heart-pulse" title="Ícone de coração e batimentos" alt="Ícone de coração e batimentos"></i>
+            <div class="card-body">
+              <h6 class="card-title-3">Planejamento de Dietas Enterais</h5>
+                <a href="#agende" class="btn card-a-3">SAIBA MAIS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="card text-center">
+            <i class="bi bi-heart-pulse" title="Ícone de coração e batimentos" alt="Ícone de coração e batimentos"></i>
+            <div class="card-body">
+              <h6 class="card-title-4">Aconselhamento Nutricional<br> &nbsp</h5>
+                <a href="#agende" class="btn card-a-4">SAIBA MAIS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Agende -->
+  <div id="agende">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="titulo-agende">AGENDE SUA CONSULTA</h2>
+        </div>
+        <form class="needs-validation" method="POST" action="/enviar-email" novalidate>
+          <div class="row">
+            <div class="col-2 col-sm-3"></div>
+            <div class="col-8 col-sm-6">
+              <p id="obrigatorio">Campos obrigatórios *</p>
+              <label class="form-label input-cpf" for="cpf">CPF *</label>
+              <input type="text" class="form-control" placeholder="Insira seu CPF..." id="cpf" name="cpf" required>
+              <div class="invalid-feedback">
+                O campo CPF é obrigatório!
+              </div>
+            </div>
+            <div class="col-2 col-sm-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-2 col-sm-3"></div>
+            <div class="col-8 col-sm-6">
+              <label class="form-label input-nome" for="nome">NOME *</label>
+              <input type="text" class="form-control" placeholder="Insira seu nome..." id="nome" name="usuarioRef"
+                required>
+              <div class="invalid-feedback">
+                O campo NOME é obrigatório!
+              </div>
+            </div>
+            <div class="col-2 col-sm-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-2 col-sm-3"></div>
+            <div class="col-8 col-sm-6">
+              <label class="form-label input-email" for="email">E-MAIL *</label>
+              <input type="email" class="form-control" placeholder="Insira seu e-mail..." id="email" name="emailDest"
+                required>
+              <div class="invalid-feedback">
+                O campo E-MAIL é obrigatório!
+              </div>
+            </div>
+            <div class="col-2 col-sm-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-2 col-sm-3"></div>
+            <div class="col-8 col-sm-6">
+              <label class="form-label input-telefone" for="telefone">TELEFONE *</label>
+              <input type="text" class="form-control" placeholder="Insira seu telefone..." id="telefone" name="telefone"
+                required>
+              <div class="invalid-feedback">
+                O campo TELEFONE é obrigatório!
+              </div>
+            </div>
+            <div class="col-2 col-sm-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-2 col-sm-3"></div>
+            <div class="col-8 col-sm-6">
+              <label class="form-label input-data-nascimento" for="data-nascimento">DATA DE NASCIMENTO *</label>
+              <input type="text" class="form-control" placeholder="Insira sua data de nascimento..."
+                id="data-nascimento" name="dataNascimento" required>
+              <div class="invalid-feedback">
+                O campo DATA DE NASCIMENTO é obrigatório!
+              </div>
+            </div>
+            <div class="col-2 col-sm-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-2 col-sm-3"></div>
+            <div class="col-8 col-sm-6">
+              <label class="form-label input-data-hora" for="data-hora-consulta">DATA E HORA DA CONSULTA *</label>
+              <input type="datetime-local" class="form-control" placeholder="Insira a melhor data e hora..."
+                id="data-hora-consulta" name="dataConsulta" required>
+              <div class="invalid-feedback">
+                O campo DATA E HORA DA CONSULTA é obrigatório!
+              </div>
+            </div>
+            <div class="col-2 col-sm-3"></div>
+          </div>
+          <div class="row">
+            <div class="col-2 col-sm-3"></div>
+            <div class="col-8 col-sm-6">
+              <button type="submit" class="btn" id="btn-agende-agende">
+                AGENDAR CONSULTA
+              </button>
+            </div>
+            <div class="col-2 col-sm-3"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer>
+    <div>
+      <div class="container-fluid rodape">
+        <div class="row">
+          <div class="col-12">
+            <p class="paragrafo-rodape">© Todos os direitos reservados, 2022. Aline Novak CRN-10, Nº 9667P.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+  <!-- JavaScript Projeto-->
+  <script type="text/javascript" src="../static/js/scripts.js"></script>
+
+  <!-- JQuery Mask -->
+  <script src="../static/js/jquery-3.6.1.min.js"></script>
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="../static/js/jquery.mask.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#telefone').mask('(00) 0 0000-0000');
+    });
+
+    $(document).ready(function () {
+      $('#cpf').mask('000.000.000-00');
+    });
+
+    $(document).ready(function () {
+      $('#data-nascimento').mask('00/00/0000');
+    });
+  </script>
+
+  <script>
+    (function () {
+      'use strict'
+
+      const forms = document.querySelectorAll('.needs-validation')
+
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
+  </script>
+  <script>
+    const toastTrigger = document.getElementById('btn-agende-agende')
+    const toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', () => {
+        const toast = new bootstrap.Toast(toastLiveExample)
+
+        toast.show()
+      })
+    }</script>
+
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+
+</html>

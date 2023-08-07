@@ -1,0 +1,728 @@
+/* Gerais */
+* body {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    background: white;
+    transition: 0.3s;
+}
+
+input:hover {
+    border: 2px solid red;
+}
+
+.navbar-toggler {
+    background-color: #363636;
+    color: white;
+}
+
+.dark .navbar-toggler {
+    background-color: white;
+    color: #363636;
+}
+
+.bi {
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* MENU */
+
+.menu {
+    border-bottom: 2px solid #363636;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+#menu-itens .navbar-nav {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#menu-itens .nav-item {
+    margin: 0 0.7em;
+}
+
+.logo-menu {
+    color: #363636;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.logo-menu:hover {
+    border: 2px solid red;
+}
+
+.logo-menu:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+.pagina-menu {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.pagina-menu:hover {
+    border: 2px solid red;
+}
+
+.sobre-menu {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.sobre-menu:hover {
+    border: 2px solid red;
+}
+
+.servicos-menu {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.servicos-menu:hover {
+    border: 2px solid red;
+}
+
+.adm-menu {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.adm-menu:hover {
+    border: 2px solid red;
+}
+
+#btn-agende-menu {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #6ADB75;
+    border-color: transparent;
+}
+
+#btn-agende-menu:hover {
+    border: 2px solid red;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi-sun {
+    color: #ffd900;
+    display: none;
+}
+
+.bi-sun:hover {
+    border: 2px solid red;
+}
+
+.bi-moon {
+    color: #363636;
+}
+
+.bi-moon:hover {
+    border: 2px solid red;
+}
+
+.btn-mais-menu {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn-mais-menu:hover {
+    border: 2px solid red;
+}
+
+.btn-menos-menu {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.btn-menos-menu:hover {
+    border: 2px solid red;
+}
+
+/* Dark */
+.dark, .dark body {
+    background-color: #1c1c1c;
+}
+
+/* Dark Menu */
+
+.dark .menu {
+    border-bottom: 2px solid white;
+}
+
+.dark .bi-sun {
+    display: block; 
+}
+
+.dark .bi-moon {
+    display: none;
+}
+
+.dark .btn-mais-menu {
+    color: white;
+}
+
+.dark .btn-menos-menu {
+    color: white;
+}
+
+.dark .logo-menu {
+    color: #6ADB75;
+}
+
+.dark .pagina-menu {
+    color: white;
+}
+
+.dark .sobre-menu {
+    color: white;
+}
+
+.dark .servicos-menu {
+    color: white;
+}
+
+.dark .adm-menu {
+    color: white;
+}
+
+/* PÁGINA INICIAL */
+
+.titulo-pagina {
+    color: #363636;
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.titulo-pagina:hover {
+    border: 2px solid red;
+}
+
+.paragrafo-pagina {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+.paragrafo-pagina:hover {
+    border: 2px solid red;
+}
+
+#ilustracao {
+    margin-top: 50px;
+}
+
+#ilustracao:hover {
+    border: 2px solid red;
+}
+
+#btn-agende-pagina {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #6ADB75;
+    border-color: transparent;
+    margin-top: 30px;
+    width: 100%;
+}
+
+#btn-agende-pagina:hover {
+    border: 2px solid red;
+}
+
+/* Página Inicial Dark */
+
+.dark .titulo-pagina {
+    color: white;
+}
+
+.dark .paragrafo-pagina {
+    color: white;
+}
+
+/* SOBRE MIM */
+
+.titulo-sobre {
+    color: #363636;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.titulo-sobre:hover {
+    border: 2px solid red;
+}
+
+.titulo-sobre::after {
+    content: "";
+    width: 240px;
+    height: 4px;
+    background-color: #6ADB75;
+    display: block;
+    margin: 15px auto;
+}
+
+.paragrafo-sobre {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+.paragrafo-sobre:hover {
+    border: 2px solid red;
+}
+
+.aline {
+    border: 4px solid #6ADB75;
+    margin-top: 50px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.aline:hover {
+    border: 2px solid red;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+}
+
+/* Sobre Mim Dark */
+
+.dark .titulo-sobre {
+    color: white;
+}
+
+.dark .paragrafo-sobre {
+    color: white;
+}
+
+.dark .aline {
+    border: 4px solid white;
+}
+
+.dark .aline:hover {
+    border: 2px solid red;
+}
+
+/* SERVIÇOS */
+
+.titulo-servicos {
+    color: #363636;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.titulo-servicos:hover {
+    border: 2px solid red;
+}
+
+.titulo-servicos::after {
+    content: "";
+    width: 240px;
+    height: 4px;
+    background-color: #6ADB75;
+    display: block;
+    margin: 15px auto;
+}
+
+.mini-banners {
+    margin-top: 50px;
+    margin-bottom: 4em;
+}
+
+.mini-banners .card {
+    padding: 2em 0.3em;
+    border-radius: 10%;
+    margin-bottom: 1em;
+}
+
+.mini-banners .card:hover {
+    border: 2px solid red;
+}
+
+.mini-banners i {
+    font-size: 6em;
+    color: #6ADB75;
+}
+
+.mini-banners i:hover {
+    border: 2px solid red;
+}
+
+.card-title-1 {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+.card-title-1:hover {
+    border: 2px solid red;
+}
+
+.card-title-2 {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+.card-title-2:hover {
+    border: 2px solid red;
+}
+
+.card-title-3 {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+.card-title-3:hover {
+    border: 2px solid red;
+}
+
+.card-title-4 {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+.card-title-4:hover {
+    border: 2px solid red;
+}
+
+.mini-banners {
+    margin-top: 1.5em;
+    padding: .6em 1.2em;
+}
+
+.card-a-1 {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #6ADB75;
+    border-color: transparent;
+}
+
+.card-a-1:hover {
+    border: 2px solid red;
+}
+
+.card-a-2 {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #6ADB75;
+    border-color: transparent;
+}
+
+.card-a-2:hover {
+    border: 2px solid red;
+}
+
+.card-a-3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #6ADB75;
+    border-color: transparent;
+}
+
+.card-a-3:hover {
+    border: 2px solid red;
+}
+
+.card-a-4 {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #6ADB75;
+    border-color: transparent;
+}
+
+.card-a-4:hover {
+    border: 2px solid red;
+}
+
+/* Serviços Dark */
+
+.dark .titulo-servicos {
+    color: white;
+}
+
+.dark .mini-banners .card {
+    background-color: #1C1C1C;
+    border-color: white;
+}
+
+.dark .mini-banners .card:hover {
+    border: 2px solid red;
+}
+
+.dark .card-title-1 {
+    color: white;
+}
+
+.dark .card-title-2 {
+    color: white;
+}
+
+.dark .card-title-3 {
+    color: white;
+}
+
+.dark .card-title-4 {
+    color: white;
+}
+
+/* AGENDE */
+
+.titulo-agende {
+    color: #363636;
+    font-size: 42px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.titulo-agende:hover {
+    border: 2px solid red;
+}
+
+.titulo-agende::after {
+    content: "";
+    width: 240px;
+    height: 4px;
+    background-color: #6ADB75;
+    display: block;
+    margin: 15px auto;
+}
+
+#obrigatorio {
+    color: red;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+}
+
+.input-cpf {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+}
+
+.input-cpf:hover {
+    border: 2px solid red;
+}
+
+.input-nome {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+}
+
+.input-nome:hover {
+    border: 2px solid red;
+}
+
+.input-email {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+}
+
+.input-email:hover {
+    border: 2px solid red;
+}
+
+.input-telefone {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+}
+
+.input-telefone:hover {
+    border: 2px solid red;
+}
+
+.input-data-nascimento {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+}
+
+.input-data-nascimento:hover {
+    border: 2px solid red;
+}
+
+.input-data-hora {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px 0 0 0;
+}
+
+.input-data-hora:hover {
+    border: 2px solid red;
+}
+
+.invalid-feedback {
+    font-weight: 700;
+    color: red;
+}
+
+.toast {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #1C1C1C;
+    color: rgb(0, 255, 0);
+}
+
+.toast-header {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: white;
+    color: #363636;
+}
+
+#btn-agende-agende {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #6ADB75;
+    border-color: transparent;
+    margin-top: 30px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+#btn-agende-agende:hover {
+    border: 2px solid red;
+}
+
+/* Agende Dark */
+
+.dark .titulo-agende {
+    color: white;
+}
+
+.dark .input-cpf {
+    color: white;
+}
+
+.dark .input-nome {
+    color: white;
+}
+
+.dark .input-email {
+    color: white;
+}
+
+.dark .input-telefone {
+    color: white;
+}
+
+.dark .input-data-nascimento {
+    color: white;
+}
+
+.dark .input-data-hora {
+    color: white;
+}
+
+/* Rodapé */
+
+.rodape {
+    border-top: 2px solid #363636;
+}
+
+.paragrafo-rodape {
+    color: #363636;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.paragrafo-rodape:hover {
+    border: 2px solid red;
+}
+
+/* Rodapé Dark */
+.dark .rodape {
+    border-top: 2px solid white;
+}
+
+.dark .paragrafo-rodape {
+    color: white;
+}
+
+@media (min-width: 1200px) {
+
+    #pagina-inicial {
+        margin-top: 50px;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #sobre-mim {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #servicos {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #agende {
+        width: 100vw;
+    }
+
+    #pagina-administracao {
+        margin-top: 50px;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #clientes {
+        width: 100vw;
+        height: 100vh;
+    }
+}
