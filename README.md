@@ -25,7 +25,7 @@ Pensando nesse aspecto, foi realizado o front-end do projeto <a href="https://gi
 ###
 
 <div align="center">
-  <img height="720" src="resources/static/gifs/demonstração.gif"/>
+  <img height="500" src="resources/static/gifs/demonstração.gif"/>
 </div>
 
 ###
